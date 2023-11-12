@@ -113,6 +113,15 @@ body {
   left: 17.9%;
   top: 20%;
   z-index: 2;
+  animation: move1 4s ease-in-out 1s;
+}
+
+@keyframes move1 {
+  0% {background-color: #e0e0e0; left: 17.9%;}
+  25% {background-color: #2e7d33; left: 15%;}
+  50% {background-color: #e0e0e0; left: 13%;}
+  75% {background-color: #2e7d33; left: 11%;}
+  100% {background-color: #e0e0e0; left: 17.9%;}
 }
 
 .grey2 {
@@ -123,6 +132,15 @@ body {
   left: 53%;
   top: 15%;
   z-index: 2;
+  animation: move2 4s ease-in-out 1s;
+}
+
+@keyframes move2 {
+  0% {background-color: #e0e0e0; top: 15%;}
+  25% {background-color: #2e7d33; top: 13%;}
+  50% {background-color: #e0e0e0; top: 11%;}
+  75% {background-color: #2e7d33; top: 9%;}
+  100% {background-color: #e0e0e0; top: 15%;}
 }
 
 .grey3 {
@@ -133,6 +151,15 @@ body {
   left: 23%;
   bottom: 7.8%;
   z-index: 2;
+  animation: move3 4s ease-in-out 1s;
+}
+
+@keyframes move3 {
+  0% {background-color: #e0e0e0; left: 23%;}
+  25% {background-color: #2e7d33; left: 25%;}
+  50% {background-color: #e0e0e0; left: 27%;}
+  75% {background-color: #2e7d33; left: 29%;}
+  100% {background-color: #e0e0e0; left: 23%;}
 }
 
 .green1 {
@@ -143,17 +170,35 @@ body {
   position: absolute;
   bottom: 7%;
   left: 52%;
+  animation: move4 4s ease-in-out 1s;
+}
+
+@keyframes move4 {
+  0% {background-color: #2e7d33; width: 50px; height: 50px; left: 52%;}
+  25% {background-color: #e0e0e0; width: 45px; height: 45px; left: 53%;}
+  50% {background-color: #2e7d33; width: 40px; height: 40px; left: 54%;}
+  75% {background-color: #e0e0e0; width: 35px; height: 35px; left: 55%;}
+  100% {background-color: #2e7d33; width: 50px; height: 50px; left: 52%;}
 }
 
 .green2 {
-  background-color: #2e7d33;
+  background: linear-gradient(300deg, #2e7d33, #c8e6ca, #2e7d33);
+  background-size: 180% 180%;
+  animation: move5 4s ease-in-out infinite;
   width: 110px;
   height: 110px;
   border-radius: 100%;
   position: absolute;
   right: -4%;
   top: -6%;
-  
+}
+
+@keyframes move5 {
+  0% {width: 110px; height: 110px;}
+  25% {width: 115px; height: 115px;}
+  50% {width: 120px; height: 120px;}
+  75% {width: 125px; height: 125px;}
+  100% {width: 110px; height: 110px;}
 }
 
 .footer {
